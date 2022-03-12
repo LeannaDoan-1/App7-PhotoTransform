@@ -106,7 +106,7 @@
         var canvas_a = document.getElementById('myCanvas_a');
         var context_a = canvas_a.getContext('2d');
 
-        context_a.drawImage(imageObj, x, y);
+        context_a.drawImage(imageObj, 0, 0);
 
         var imageData = context_a.getImageData(0, 0, 600, 500);
         var data = imageData.data;
