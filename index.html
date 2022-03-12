@@ -145,20 +145,11 @@
      
        <canvas id="myCanvas_a" width=600 height=500 style="border:1px solid #d3d3d3;"></canvas>
        <script> /* This script initiates the cavas and puts the text on the canvas "myCanvas" */
-       function drawImage(imageObj) {
         var canvas_a = document.getElementById('myCanvas_a');
         var context_a = canvas_a.getContext("2d");
         context_a.font = '20pt Calibri';
         context_a.fillStyle = "black";
         context_a.fillText("New canvas", 10, 20);
-        var x = 69;
-        var y = 50;
-        
-        context_a.drawImage(imageObj, x, y);
-        
-        var imageData = context_a.getImageData(x, y, imageObj.width, imageObj.height);
-        var data = imageData.data;
-        }
        </script>
 
     </div><!-- /content -->
