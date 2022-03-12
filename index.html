@@ -105,12 +105,10 @@
 	function drawImage(imageObj) {
         var canvas_a = document.getElementById('myCanvas_a');
         var context_a = canvas_a.getContext('2d');
-        var x = 69;
-        var y = 50;
 
         context_a.drawImage(imageObj, x, y);
 
-        var imageData = context_a.getImageData(x, y, imageObj.width, imageObj.height);
+        var imageData = context_a.getImageData(0, 0, 600, 500);
         var data = imageData.data;
 
         for(var i = 0; i < data.length; i += 4) {
@@ -124,7 +122,7 @@
         }
 
         // overwrite original image
-        context_a.putImageData(imageData, x, y);
+        context_a.putImageData(imageData, 0, 0);
       }
       
       var imageObj = new Image();
