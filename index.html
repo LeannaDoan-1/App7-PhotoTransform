@@ -102,10 +102,7 @@
 
           /* PUT ANY CHANGES TO THE JAVASCRIPT HERE  */
           
-        
-	var docMod = document.lastModified; // loads last modified time stamp into docMod variable
-	alert("This file last modified " + docMod); // generates alert box with time stamp. If annoying, comment out this entire line.
-	console.log("This file last modified " + docMod); // generates message in javaScript console (found in developers tools) with time stamp.  
+          
           
           
         } // end of img.onload
@@ -122,6 +119,10 @@
     } // end of the else statement if file in NOT an image
   }); // end of the fileInput.addEventListener function
  } // end of the window.onload function
+	 
+var docMod = document.lastModified; // loads last modified time stamp into docMod variable
+alert("This file last modified " + docMod); // generates alert box with time stamp. If annoying, comment out this entire line.
+console.log("This file last modified " + docMod); // generates message in javaScript console (found in developers tools) with time stamp.
  </script>
  </head>
 
