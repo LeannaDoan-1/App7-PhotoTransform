@@ -130,9 +130,10 @@
 
 <body> <!--beginning of body-->
 	<div data-role="page"> <!--beginning of division (page)-->
-		<div data-role="header">
-			<h1>Primary Colors</h1></div> <!--heading-->
-		<div data-role="content">
+		<div data-role="header"> <!--beginning of division (header)-->
+			<h1>Primary Colors</h1> <!--heading-->
+		</div> <!--end of division (header)-->
+		<div data-role="content"> <!--beginning of division (content)-->
 			<h2>Push button to take picture.</h2> <!--heading-->
 			<div> <!--beginning of division-->
 				Press orange button to create or choose image file: <!--text on page-->
@@ -141,7 +142,7 @@
 			<div id="messageDisplayArea"></div>
 
 			<canvas id="myCanvas" width=600 height=500 style="border:1px solid #d3d3d3;"></canvas> <!--canvas-->
-				<script> /* This script initiates the canvas and puts the text on the canvas "myCanvas" */
+				<script> // beginning of JavaScript section; this script initiates the canvas and puts the text on the canvas "myCanvas"
 					var canvas = document.getElementById('myCanvas'); // finds <canvas> element in DOM
 					var context = canvas.getContext("2d"); // drawing context
 					context.font = '20pt Calibri'; // defines text font
@@ -151,7 +152,7 @@
 				</script> <!--end of JavaScript section-->
 
 			<canvas id="myCanvas_a" width=600 height=500 style="border:1px solid #d3d3d3;"></canvas> <!--canvas-->
-				<script> /* This script initiates the canvas and puts the text on the canvas "myCanvas" */
+				<script> // beginning of JavaScript section; this script initiates the canvas and puts the text on the canvas "myCanvas"
 					var canvas_a = document.getElementById('myCanvas_a'); // finds <canvas> element in DOM
 					var context_a = canvas_a.getContext("2d"); // drawing context
 					context_a.font = '20pt Calibri'; // defines text font
