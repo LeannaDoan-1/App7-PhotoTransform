@@ -166,6 +166,7 @@ console.log("This file last modified " + docMod); // generates message in javaSc
         var canvas = document.getElementById('myCanvas');
         var context = canvas.getContext("2d");
         context.font = '20pt Calibri';
+	context.textAlign = 'center';
         context.fillStyle = "black";
         context.fillText("Original image will go here", canvas.width / 2, canvas.height /2);
       </script>
@@ -175,6 +176,7 @@ console.log("This file last modified " + docMod); // generates message in javaSc
         var canvas_a = document.getElementById('myCanvas_a');
         var context_a = canvas_a.getContext("2d");
         context_a.font = '20pt Calibri';
+	context.textAlign = 'center';
         context_a.fillStyle = "black";
         context_a.fillText("Transformed image will go here", canvas_a.width / 2, canvas_a.height / 2);
        </script>
