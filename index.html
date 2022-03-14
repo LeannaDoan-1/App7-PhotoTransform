@@ -97,18 +97,18 @@
 
 							/* PUT ANY CHANGES TO THE JAVASCRIPT HERE  */
 
-							var canvas_a = document.getElementById('myCanvas_a');
-							var context_a = canvas_a.getContext('2d');
+							var canvas_a = document.getElementById('myCanvas_a'); // finds <canvas> element in DOM
+							var context_a = canvas_a.getContext('2d'); // drawing context
 
-							var imageData = context.getImageData(0, 0, 600, 500);
-							var data = imageData.data;
+							var imageData = context.getImageData(0, 0, 600, 500); // copies pixel data for specified rectangle on first canvas
+							var data = imageData.data; // creates variable to store data from "imageData" variable
 
-							for(var i = 0; i < data.length; i += 4) {
-							data[i] = 0; // sets red to 0
-							data[i + 1] = 0; // sets green to 0
+							for(var i = 0; i < data.length; i += 4) { <!--loops through block of code-->
+							data[i] = 0; // sets red component equal to 0
+							data[i + 1] = 0; // sets green component equal to 0
 							}
 
-							context_a.putImageData(imageData, 0, 0); // overwrites original image
+							context_a.putImageData(imageData, 0, 0); // overwrites original image by putting transformed image onto second canvas
 						} // end of img.onload
 
 						img.src = reader.result; // image source
