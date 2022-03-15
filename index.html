@@ -103,7 +103,7 @@
 							var imageData = context.getImageData(0, 0, 600, 500); // copies pixel data for specified rectangle on first canvas
 							var data = imageData.data; // creates variable to store data from "imageData" variable
 
-							for(var i = 0; i < data.length; i += 4) { <!--loops through block of code-->
+							for(var i = 0; i < data.length; i += 4) { // loops through block of code
 							data[i] = 0; // sets red component equal to 0
 							data[i + 1] = 0; // sets green component equal to 0
 							}
