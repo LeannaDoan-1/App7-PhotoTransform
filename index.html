@@ -76,8 +76,8 @@
 			}
 
 		window.onload = function() { // necessary to keep JavaScripts from running before the app gets a chance to load entirely
-			var fileInput = document.getElementById('fileInput');
-			var messageDisplayArea = document.getElementById('messageDisplayArea');
+			var fileInput = document.getElementById('fileInput'); // finds <fileInput> element in DOM
+			var messageDisplayArea = document.getElementById('messageDisplayArea'); // finds <messageDisplayArea> element in DOM
 			fileInput.addEventListener('change', function(e) { // looks for any change in the <input> tag indicating that the user has selected a file (picture)
 				var file = fileInput.files[0];
 				var imageType = /image.*/;
@@ -136,11 +136,12 @@
 				Press orange button to create or choose image file: <!--text on page-->
 				<input type="file" id="fileInput" STYLE="background-color: #FF6600;"> <!--defines file-select field & button for file uploads-->
 			</div> <!--end of division-->
-			<div id="messageDisplayArea"></div>
+			<div id="messageDisplayArea"> <!--beginning of division-->
+			</div> <!--end of division-->
 
 			<canvas id="myCanvas" width=600 height=500 style="border:1px solid #d3d3d3;"></canvas> <!--canvas-->
 				<script> // beginning of JavaScript section; this script initiates the canvas and puts the text on the canvas "myCanvas"
-					var canvas = document.getElementById('myCanvas'); // finds <canvas> element in DOM
+					var canvas = document.getElementById('myCanvas'); // finds <myCanvas> element in DOM
 					var context = canvas.getContext("2d"); // drawing context
 					context.font = '20pt Calibri'; // defines text font
 					context.textAlign = 'center'; // centers text on canvas
@@ -150,7 +151,7 @@
 
 			<canvas id="myCanvas_a" width=600 height=500 style="border:1px solid #d3d3d3;"></canvas> <!--canvas-->
 				<script> // beginning of JavaScript section; this script initiates the canvas and puts the text on the canvas "myCanvas"
-					var canvas_a = document.getElementById('myCanvas_a'); // finds <canvas> element in DOM
+					var canvas_a = document.getElementById('myCanvas_a'); // finds <myCanvas_a> element in DOM
 					var context_a = canvas_a.getContext("2d"); // drawing context
 					context_a.font = '20pt Calibri'; // defines text font
 					context_a.textAlign = 'center'; // centers text on canvas
