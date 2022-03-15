@@ -41,7 +41,8 @@
 
 	<script> // beginning of JavaScript section
 		var docMod = document.lastModified; // gets last modified date and time of the index.html file
-		console.log("This file last modified  " + docMod); // displays last modified date and time in the javascipt browser console 
+		console.log("This file last modified " + docMod); // displays last modified date and time in the JavaScript browser console
+		alert("This file last modified " + docMod); // generates alert box with time stamp; if annoying, comment out this entire line
 
 		/* detectVerticalSquash & drawImageIOSFix = are functions that are critical due to a flaw in the iPhone camera software that squishes any photos displayed on an HTML5 canvas element. https://github.com/stomita/ios-imagefile-megapixel*/
 		function detectVerticalSquash(img) { // fixes bug with displaying large iOS images on canvas
@@ -121,10 +122,6 @@
 				} // end of the else statement if file in NOT an image
 			}); // end of the fileInput.addEventListener function
 		} // end of the window.onload function
-
-		var docMod = document.lastModified; // loads last modified time stamp into docMod variable
-		alert("This file last modified " + docMod); // generates alert box with time stamp. If annoying, comment out this entire line
-		console.log("This file last modified " + docMod); // generates message in javaScript console (found in developers tools) with time stamp
 	</script> <!--end of JavaScript section-->
 </head> <!--end of header section-->
 
